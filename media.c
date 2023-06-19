@@ -7,18 +7,21 @@ int main()
 
     setlocale(LC_ALL, "portuguese");
 
+    
     int i, j, semestre[2];
     float nota[3][2], media[2];
     float soma = 0;
-
+    
+    //La√ßo para semestre
     for (i = 0; i < 2; i++)
     {
 
-        printf("%d∫ semestre: \n", i + 1);
+        printf("%d¬∫ semestre: \n", i + 1);
 
+        //La√ßo para notas
         for (j = 0; j < 3; j++)
         {
-            printf("Valor da %d∫ nota: ", j + 1);
+            printf("Valor da %d¬∫ nota: ", j + 1);
             scanf("%f", &nota[i][j]);
 
             soma += nota[i][j];
@@ -37,12 +40,12 @@ int main()
 printf("\n");
     for (i = 0; i < 2; i++)
     {
-        printf("%d∫ mÈdia do semestre: %.1f\n", i + 1, media[i]);
+        printf("%d¬∫ m√©dia do semestre: %.1f\n", i + 1, media[i]);
 
         for (j = 0; j < 3; j++)
         {            
             
-            printf("%d∫ nota: %.1f\n", j + 1, nota[i][j]);
+            printf("%d¬∫ nota: %.1f\n", j + 1, nota[i][j]);
         }
     }
 
